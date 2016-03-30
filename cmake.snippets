@@ -1,0 +1,20 @@
+snippet cmake "cmake_minimum_required" b
+cmake_minimum_required(VERSION 2.8)
+${0}
+endsnippet
+snippet find "find_package" b
+find_package(${1:VTK})
+${0}
+endsnippet
+snippet include "include" b
+include(${1:${${2:VTK_USE_FILE}}})
+${0}
+endsnippet
+snippet add "add_executable" b
+add_executable(main ${1})
+${0}
+endsnippet
+snippet target "target_link_libraries" b
+target_link_libraries(main ${1:${${2:VTK_LIBRARIES}}})
+${0}
+endsnippet

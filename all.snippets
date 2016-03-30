@@ -1,0 +1,10 @@
+snippet hello "hello world" b
+${1:hello world}
+endsnippet
+snippet title "Title transformation"
+${1:a text}
+${1/\w+\s*/\U$0/}
+endsnippet
+snippet test "test-visual" b
+${VISUAL/hello/\u$0/}
+endsnippet
