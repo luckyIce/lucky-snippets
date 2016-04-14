@@ -1,1 +1,23 @@
-expands c
+snippet struct "struct ListNode" b
+struct ListNode{
+    int val;
+    ListNode *next;
+    ListNode(int x):val(x),next(nullptr)
+};
+${0}
+endsnippet
+snippet ret "return" b
+return ${1}
+endsnippet
+snippet us "using namespace std" b
+using namespace std;
+${0}
+endsnippet
+snippet ={ "strings"  
+={"${1}"${2:,"${3}"${4:,"${5}"${6:,"${7}"${8:,"${9}"${10:,"${11}"${12:,"${13}"${14:,"${15}"}}}}}}}
+endsnippet
+snippet vector "vector"
+vector<${1:int}> ${2:iVec};
+${0}
+endsnippet
+

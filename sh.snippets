@@ -1,5 +1,8 @@
-snippet if "if ... then (if)"
+snippet if "if ... then (if)" i
 if ${2:[[ ${1:condition}  ]]}; then
 	${0:#statements}
 fi
+endsnippet
+snippet _skel "shebang" b
+#!/bin/sh
 endsnippet
